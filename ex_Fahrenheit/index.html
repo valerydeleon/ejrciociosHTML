@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <style type="text/css" >
+      body{
+        margin-left: 400px;
+        margin-top: 100px;
+        background-color: #e17579;
+        font-family: lulo clean;
+      }
+      table{
+        background-color: #e17579
+      }
+    </style>
+
+    <h2>Grados Celsius</h2>
+      <table border="0px">
+        <tr>
+          <td><input type="text" id="inputCelsius" placeholder="Cº"/></td>
+          <td><input type="button" class="button" onclick="aFahrenheit();" value="Convertir"  ></td>
+        </tr>
+        <tr>
+          <th>Resultado</th>
+          <td><input type="text" id="resultadoEnFahrenheit" name="resultado" ></td>
+        </tr>
+      </table>
+
+    <h2>Grados Fahrenheit</h2>
+      <table>
+        <tr>
+          <td><input type="text" id="inputFahrenheit" placeholder="Fº"/></td>
+          <td><input type="button" class="button" onclick="aCelsius();" value="Convertir"  ></td>
+        </tr>
+        <tr>
+          <th>Resultado</th>
+          <td><input type="text" id="resultadoEnCelsius" name="resultado" ></td>
+        </tr>
+    </table>
+
+    <script src="assets/js/fahrenheit.js" ></script>
+  </body>
+</html>

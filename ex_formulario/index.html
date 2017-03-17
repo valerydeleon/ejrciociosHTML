@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <style type="text/css">
+
+      body{ /* propiedades de todo el body */
+        background-color: #f6e5d6; /* COLOR del documento (c carne) */
+        font-family: helvetica; /* TIPOGRAFIA en el documento */
+        font-size: 20px; /* TAMANO de TIPOGRAFIA del documento */
+        font-weight: bold; /* PESO de TIPOGRAFIA del documento */
+        color: #84234d; /* COLOR de la TIPOGRAFIA en el docuemnto (c vino) */
+        margin-left: 25px; /* margen a la izqierda del documento */
+      }
+      h1{ /* propiedades para el encabezado */
+        color: #04afbf; /* COLOR del encabezado (c azul) */
+      }
+      form{ /* contiene al formulario  */
+        margin-left: 50px; /* margen a la izqierda adicional al del documento */
+      }
+      input{ /* cambia las propiedades de los inputs */
+        /*background: #04afbf;*/
+        border: 0px;
+        color: #04afbf;
+        font-size: 15px;
+        font-weight: normal;
+
+      }
+      select{ /* cambia las propiedades del dropdown */
+        border: 0px;
+        font-family: helvetica;
+        font-size: 10px;
+        color: #04afbf;
+      }
+      ::-webkit-input-placeholder{ /* cambia las propiedades del placeholder */
+        /*color: yellow;*/
+        font-weight: lighter;
+        font-size: 10px;
+      }
+      .button{ /* propiedades del boton */
+        background: #04afbf; /* COLOR del fondo del boton (c azul) */
+        color: white; /* COLOR de la LETRA del boton (c blanco) */
+        border: 0px; /* BORDE O CONTORNO del boton */
+        border-radius: 7px; /* BORDE REDONDEADO del boton */
+        font-family: helvetica; /* TIPOGRAFIA del boton */
+        font-size: 20px; /* TAMANO de la TIPOGRAFIA del boton */
+      }
+      .button:hover{ /* hace que al pasar el cursor el boton tenga otras propiedades */
+        background: #84234d; /* COLOR del fondo del boton (c vino) */
+      }
+
+    </style>
+
+    <h1>Ingresa tus datos</h1>
+
+    <form action="">
+    <p><p/>
+      <label> Nombre: </label><br>
+      <input type="text" name="Nombre y Apellido" placeholder="Juan Perez"
+      style="width:200px; height:20px" required>
+    <p><p/>
+      <label> Número de Teléfono: </label><br>
+      <input type="number" name="Numero Telefono" pattern="ˆ[55]\d{8}$f"
+      placeholder="55 43 65 61 68" style="width:200px; height:20px" required>
+    <p><p/>
+      <label> Muchas opciones: </label><br>
+      <select name="Dropdown" style="width:200px; height:20px" required>
+        <option value="0"> Elige una opción</option>
+        <option value="1">Mensaje</option>
+        <option value="2">Sugerencia</option>
+        <option value="3">Comentario</option>
+        <option value="4">Queja</option>
+      </select>
+    <p><p/>
+      <label> Correo Electrónico: </label><br>
+      <input type="email" name="email" placeholder="juan_perez@dominio.com"
+      style="width:200px; height:20px" required>
+    <p><p/>
+      <label> Contraseña: </label><br>
+      <input type="password" name="password" pattern=".{6,}"
+      title:"6 o mas caracteres" placeholder="xxx xxx"
+      style="width:200px; height:20px" required>
+    <p><p/>
+      <input type="submit" class="button" value="Enviar"
+      style="width:80px; height:30px" required>
+    </form>
+
+  </body>
+</html>
